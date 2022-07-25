@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Event Details</title>
+  <!-- base:css -->
+  <link rel="stylesheet" href="{{asset('admin/vendors/typicons/typicons.css')}}">
+  <link rel="stylesheet" href="{{asset('admin/vendors/css/vendor.bundle.base.css')}}">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{{asset('admin/css/vertical-layout-light/style.css')}}">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="{{asset('admin/images/favicon.png')}}" />
+</head>
+<body>
+ 
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+
+    <!-- partial -->
+   
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_settings-panel.html -->
+      <div class="theme-setting-wrapper">
+        <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close typcn typcn-times"></i>
+          <p class="settings-heading">SIDEBAR SKINS</p>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <p class="settings-heading mt-2">HEADER SKINS</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default"></div>
+          </div>
+        </div>
+      </div>
+      <div id="right-sidebar" class="settings-panel">
+        <i class="settings-close typcn typcn-times"></i>
+        <ul class="nav nav-tabs" id="setting-panel" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="setting-content">
+          <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+            <div class="add-items d-flex px-3 mb-0">
+              <form class="form w-100">
+                <div class="form-group d-flex">
+                  <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                  <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                </div>
+              </form>
+            </div>
+            <div class="list-wrapper px-3">
+              <ul class="d-flex flex-column-reverse todo-list">
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Team review meeting at 3.00 PM
+                    </label>
+                  </div>
+                  <i class="remove typcn typcn-delete-outline"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Prepare for presentation
+                    </label>
+                  </div>
+                  <i class="remove typcn typcn-delete-outline"></i>
+                </li>
+                <li>
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox">
+                      Resolve all the low priority tickets due today
+                    </label>
+                  </div>
+                  <i class="remove typcn typcn-delete-outline"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Schedule meeting for next week
+                    </label>
+                  </div>
+                  <i class="remove typcn typcn-delete-outline"></i>
+                </li>
+                <li class="completed">
+                  <div class="form-check">
+                    <label class="form-check-label">
+                      <input class="checkbox" type="checkbox" checked>
+                      Project review
+                    </label>
+                  </div>
+                  <i class="remove typcn typcn-delete-outline"></i>
+                </li>
+              </ul>
+            </div>
+            <div class="events py-4 border-bottom px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="typcn typcn-media-record-outline text-primary mr-2"></i>
+                <span>Feb 11 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Creating component page</p>
+              <p class="text-gray mb-0">build a js based app</p>
+            </div>
+            <div class="events pt-4 px-3">
+              <div class="wrapper d-flex mb-2">
+                <i class="typcn typcn-media-record-outline text-primary mr-2"></i>
+                <span>Feb 7 2018</span>
+              </div>
+              <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+              <p class="text-gray mb-0 ">Call Sarah Graves</p>
+            </div>
+          </div>
+          <!-- To do section tab ends -->
+          <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+            <div class="d-flex align-items-center justify-content-between border-bottom">
+              <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+              <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+            </div>
+            <ul class="chat-list">
+              <li class="list active">
+                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Thomas Douglas</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">19 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <div class="wrapper d-flex">
+                    <p>Catherine</p>
+                  </div>
+                  <p>Away</p>
+                </div>
+                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                <small class="text-muted my-auto">23 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Daniel Russell</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">14 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                <div class="info">
+                  <p>James Richardson</p>
+                  <p>Away</p>
+                </div>
+                <small class="text-muted my-auto">2 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Madeline Kennedy</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">5 min</small>
+              </li>
+              <li class="list">
+                <div class="profile"><img src="images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                <div class="info">
+                  <p>Sarah Graves</p>
+                  <p>Available</p>
+                </div>
+                <small class="text-muted my-auto">47 min</small>
+              </li>
+            </ul>
+          </div>
+          <!-- chat tab ends -->
+        </div>
+      </div>
+      <!-- partial -->
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          
+
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{url('admin/event')}}">
+              <i class="typcn typcn-calendar menu-icon"></i>
+              <span class="menu-title">Event</span>
+            </a>
+          </li>
+
+
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+       
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span style="font-size: 1.2em;" class="text-muted text-center text-sm-left d-block d-sm-inline-block">Event Setup</span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">
+                          <a href="javascript:void" onclick="$('#logout-form').submit();">
+                              Logout
+                          </a>
+                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                              @csrf
+                          </form>
+
+                        </span>
+                    </div>
+                </div>    
+            </div>        
+        </footer>
+        <!-- partial -->
+
+           <div class="col-12 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Add/Edit Event</h4>
+                  
+                  <form class="forms-sample" action="storeEvent" method="POST" onsubmit="return validation()"  enctype="multipart/form-data" >
+                  {{ csrf_field() }}
+                    
+                     <label>Event Image</label>
+                      <input type="file" name="image" >
+                      <br><br>
+
+                    
+                    <div class="form-group">
+                      <label for="exampleInputName1">Event Title</label>
+                      <input type="text" name="title" class="form-control" id="event_title" placeholder="Name of Event" >
+                      <div style="color:red;font-style: italic;" id="event_titleerror"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputName1">Event Address</label>
+                      <input type="text" name="address" class="form-control" id="event_address" placeholder="Address" >
+                      <div style="color:red;font-style: italic;" id="event_addresserror"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputName1">Start Date</label>
+                      <input type="date" name="start_date" class="form-control" id="start_date" placeholder="Start Date of Event" >
+                      <div style="color:red;font-style: italic;" id="start_dateerror"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputName1">End Date</label>
+                      <input type="date" name="end_date" class="form-control" id="end_date" placeholder="End Date of Event" >
+                      <div style="color:red;font-style: italic;" id="end_dateerror"></div>
+                      
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputName1">Start Time</label>
+                      <input type="time" name="start_time" class="form-control" id="start_time" placeholder="Time of Event" >
+                      <div style="color:red;font-style: italic;" id="start_timeerror"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputName1">End Time</label>
+                      <input type="time" name="end_time" class="form-control" id="end_time" placeholder="Time of Event" >
+                      <div style="color:red;font-style: italic;" id="end_timeerror"></div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleTextarea1">Event Description</label>
+                      <textarea name="description" class="form-control" id="description" rows="4" ></textarea>
+                      <div style="color:red;font-style: italic;" id="descriptionerror"></div>
+                    </div>
+
+
+                    <button type="submit" class="btn btn-primary mr-2">Submit</button>
+                    <button class="btn btn-light">Cancel</button>
+                    </form>
+                </div>
+
+                <div class="card-body">
+                  <h4 class="card-title">Events List</h4>
+                  
+                  <div class="table-responsive">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th style="width:100%;">
+                            Event Image 
+                          </th>
+                          <th>
+                            Event Name 
+                          </th>
+                          <th>
+                            Date
+                          </th>
+                          <th>
+                            Time
+                          </th>
+                          <th>
+                            Description
+                          </th>
+                          <th>
+                            Action
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        @foreach($events as $event)
+                        <tr>
+                        <td >
+                         <a href="{{asset($event['image'])}}"> <img  src="{{asset($event['image'])}}"></a>
+                          </td>
+                          <td>{{$event['title']}}</td>
+                          <td>{{$event['date']}}</td>
+                          <td>{{$event['time']}}</td>
+                          <td>{{$event['description']}}</td>
+                          <td>
+                          <a href="event/edit/{{$event['id']}}" type="button" class="btn btn-success btn-sm btn-icon-text mr-3">
+                              Edit
+                              <i class="typcn typcn-edit btn-icon-append"></i>                          
+                          </a>
+                            <form action="{{asset('admin/event/delete')}}/{{$event['id']}}" method="POST" enctype="multipart/form-data">
+                            {{ csrf_field() }}<br>
+                              <button type="submit" class="btn btn-danger btn-sm btn-icon-text" class="deleteRecord" data-id="{{ $event['id'] }}">
+                                Delete
+                                <i class="typcn typcn-delete-outline btn-icon-append"></i>                          
+                              </button>
+                            </form>
+                          </td>
+                        </tr>
+                        @endforeach
+
+                      </tbody>
+                    </table><br><br><br><br>
+                  </div>
+                </div>
+      </div>
+              </div>
+            </div>
+
+
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+
+
+     <script type="text/javascript">
+         function validation()
+         {
+
+          var event_title=document.getElementById("event_title").value;
+          var event_address=document.getElementById("event_address").value;
+          var start_date=document.getElementById("start_date").value;
+          var end_date=document.getElementById("end_date").value;
+          var start_time=document.getElementById("start_time").value;
+          var end_time=document.getElementById("end_time").value;
+          var description=document.getElementById("description").value;
+          
+
+           var status=true;
+           document.getElementById("event_titleerror").innerHTML=null;
+           document.getElementById("event_addresserror").innerHTML=null;
+           document.getElementById("start_dateerror").innerHTML=null;
+           document.getElementById("end_dateerror").innerHTML=null;
+           document.getElementById("start_timeerror").innerHTML=null;
+           document.getElementById("end_timeerror").innerHTML=null;
+           document.getElementById("descriptionerror").innerHTML=null;
+
+           document.getElementById("event_title").style.borderColor=null;
+           document.getElementById("event_address").style.borderColor=null;
+           document.getElementById("start_date").style.borderColor=null;
+           document.getElementById("end_date").style.borderColor=null;
+           document.getElementById("start_time").style.borderColor=null;
+           document.getElementById("end_time").style.borderColor=null;
+           document.getElementById("description").style.borderColor=null;
+
+           if(event_title.length<1)
+           {
+             document.getElementById("event_title").style.borderColor="#FF0000";
+             document.getElementById("event_titleerror").innerHTML="Invalid title length";
+             status=status&&false;
+           }
+           if(event_address.length<1)
+           {
+             document.getElementById("event_address").style.borderColor="#FF0000";
+             document.getElementById("event_addresserror").innerHTML="Invalid Address length";
+             status=status&&false;
+           }
+           
+           if(start_date.length<1)
+           {
+             document.getElementById("start_date").style.borderColor="#FF0000";
+             document.getElementById("start_dateerror").innerHTML="Invalid Start Date";
+             status=status&&false;
+           }
+           if(end_date.length<1)
+           {
+             document.getElementById("end_date").style.borderColor="#FF0000";
+             document.getElementById("end_dateerror").innerHTML="Invalid End Date";
+             status=status&&false;
+           }
+
+           if(start_time.length<1)
+           {
+             document.getElementById("start_time").style.borderColor="#FF0000";
+             document.getElementById("start_timeerror").innerHTML="Invalid Start Time";
+             status=status&&false;
+           }
+           if(end_time.length<1)
+           {
+             document.getElementById("end_time").style.borderColor="#FF0000";
+             document.getElementById("end_timeerror").innerHTML="Invalid End Time";
+             status=status&&false;
+           }
+
+           if(description.length<1)
+           {
+             document.getElementById("description").style.borderColor="#FF0000";
+             document.getElementById("descriptionerror").innerHTML="Invalid description";
+             status=status&&false;
+           }
+           
+           return status;
+
+      
+         }
+
+
+
+
+       </script>
+
+    <script>
+      //Delete the Record using ajax
+      $(".deleteRecord").click(function(){
+    var id = $(this).data("id");
+    var token = $("meta[name='csrf-token']").attr("content");
+   
+    $.ajax(
+    {
+        url: "event/"+id,
+        type: 'DELETE',
+        data: {
+            "id": id,
+            "_token": token,
+        },
+        success: function (){
+            console.log("it Works");
+        }
+    });
+   
+});
+      </script>
+
+  <!-- base:js -->
+  <script src="{{asset('admin/vendors/js/vendor.bundle.base.js')}}"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="{{asset('admin/vendors/chart.js/Chart.min.js')}}"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="{{asset('admin/js/off-canvas.js')}}"></script>
+  <script src="{{asset('admin/js/hoverable-collapse.js')}}"></script>
+  <script src="{{asset('admin/js/template.js')}}"></script>
+  <script src="{{asset('admin/js/settings.js')}}"></script>
+  <script src="{{asset('admin/js/todolist.js')}}"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="{{asset('admin/js/dashboard.js')}}"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
